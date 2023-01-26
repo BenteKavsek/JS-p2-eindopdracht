@@ -1,8 +1,8 @@
 const apiCall = await fetch("https://www.digi-api.com/api/v1/digimon")
     .then((response) => response.json()
-    .then((responseJSON) => {
+    .then((data) => {
 
-        return responseJSON.content;
+        return data.content;
     })
 )
 
